@@ -1,0 +1,100 @@
+
+.hscroll {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+/*-- scss:defaults --*/
+
+// fonts
+$font-family-sans-serif: 'Snell Roundhand', 'cursive' !default;
+
+// colors
+$body-bg: #ffffff !default;
+$body-color: #536895   !default;
+$link-color: #0b8891 !default;
+$selection-bg: #302088 !default;
+
+// headings
+$presentation-heading-font: 'Blippo', 'fantasy';
+$presentation-heading-color: #536895     !default;
+
+/*-- scss:rules --*/
+
+.reveal a {
+  line-height: 1.3em;
+}
+
+
+/* Tamanho do título da seção */
+.reveal h1 {
+    font-size: 40px; /* Ajuste conforme necessário */
+}
+
+.reveal h2 {
+    font-size: 10px; /* Ajuste conforme necessário */
+}
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 16px;
+  border-left: 6px solid #2563eb;
+  font-size: 0.9em;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.card strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+
+.badges {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: #f3f4f6;
+  font-size: 0.95em;
+  font-weight: 500;
+  border-left: 6px solid;
+}
+
+/* POSITIVO (verde + azul) */
+.badge.positive {
+  border-color: #2563eb;
+}
+
+.badge.positive::before {
+  content: "↑";
+  color: #16a34a;
+  font-weight: bold;
+}
+
+/* NEGATIVO (amarelo + vermelho) */
+.badge.negative {
+  border-color: #eab308;
+}
+
+.badge.negative::before {
+  content: "↓";
+  color: #a32b16;
+  font-weight: bold;
+}
